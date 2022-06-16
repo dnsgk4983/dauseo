@@ -1,0 +1,262 @@
+.section {
+    &-intro {
+        .swiper {
+            &-slide {
+                img {
+                    width: 100%;
+                }
+            }
+
+            &-button-prev {
+                color: #fff;
+            }
+
+            &-button-next {
+                color: #fff;
+            }
+        }
+
+        .title {
+            z-index: 5;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: fit-content;
+            transform: translate(-50%, -50%);
+
+            h3 {
+                font-size: 6.4rem;
+                color: #fff;
+            }
+
+            p {
+                text-align: right;
+                font-size: 2.4rem;
+                color: #fff;
+                margin-top: 1.2rem;
+
+                span {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    &-philosophy {
+        .wrap {
+            display: flex;
+            justify-content: space-between;
+            padding: 10rem 0 12rem;
+
+            .text {
+                h3 {
+                    font-size: 2.8rem;
+                    margin: 6.4rem 0 7.2rem;
+                }
+
+                p {
+                    font-size: 2.4rem;
+                    color: #333333;
+                }
+            }
+
+            .swiper {
+                width: 48rem;
+                margin-top: 6.4rem;
+                margin-left: 5rem;
+            }
+        }
+    }
+
+    &-vision {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 320px;
+        background: url(../images/bg_vision.jpg);
+        background-size: cover;
+
+        .wrap {
+            width: 128rem;
+            margin-right: 0;
+
+            .title-wrapper {
+                display: inline-block;
+                color: #fff;
+                margin-left: 6rem;
+                padding: 9rem 8.4rem 9rem 16rem;
+                background-color: #cc0000;
+                box-sizing: border-box;
+
+                h3 {
+                    position: relative;
+                    display: flex;
+                    align-items: flex-end;
+                    font-weight: 400;
+
+                    span {
+                        font-weight: 700;
+                        margin-right: 2rem;
+                    }
+
+                    &:after {
+                        content: "";
+                        display: inline-block;
+                        width: 45rem;
+                        height: 1px;
+                        margin-left: 2rem;
+                        background-color: #fff;
+                    }
+                }
+
+                h5 {
+                    font-size: 3rem;
+                    font-weight: 500;
+                    margin: 6rem 0 1.2rem;
+                }
+            }
+        }
+    }
+
+    &-business {
+        background: url(../images/bg_business.jpg);
+        background-size: cover;
+
+        .title {
+            z-index: 10;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 10rem;
+            text-align: center;
+            color: #fff;
+        }
+
+        .card-wrapper {
+            >ul {
+                display: flex;
+
+                >li {
+                    z-index: 5;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 25%;
+                    height: 108rem;
+                    text-align: center;
+                    cursor: pointer;
+                    border-right: 1px solid rgba(255, 255, 255, 0.5);
+
+                    &:last-child {
+                        border-radius: 0;
+                    }
+
+                    .dim {
+                        z-index: -1;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(0, 0, 0, 0.4);
+                        opacity: 0;
+                        transition: all .3s;
+                    }
+
+                    span {
+                        font-size: 2.8rem;
+                        font-weight: 700;
+                        color: rgba(255, 255, 255, 0.3);
+                    }
+
+                    h3 {
+                        font-size: 3.6rem;
+                        font-weight: 700;
+                        color: #fff;
+                        margin-top: 1rem;
+                    }
+
+                    p {
+                        display: none;
+                        font-size: 1.8rem;
+                        font-weight: 500;
+                        color: #fff;
+                        margin: 3rem 0;
+                    }
+
+                    ul {
+                        display: none;
+                        font-size: 1.8rem;
+                        line-height: 3rem;
+                        font-weight: 500;
+                        text-align: left;
+                        color: #fff;
+                        padding: 0 1rem;
+                    }
+
+                    &:hover {
+                        .dim {
+                            opacity: 1;
+                        }
+
+                        ul,
+                        p {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-portfolio {}
+
+    &-faq {}
+
+    &-video {
+        &:before {
+            z-index: -1;
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 45rem;
+            background-color: #fafafa;
+        }
+
+        .wrap {
+            padding: 10rem 0 14rem;
+
+            .video-content {
+                width: 102rem;
+                margin: 14rem auto 0;
+
+                h3 {
+                    font-size: 3.6rem;
+                    font-weight: 600;
+                    margin-bottom: 4rem;
+                }
+
+                .video-wrap {
+                    display: flex;
+
+
+                    .video {
+                        width: 100%;
+                        height: 48.5rem;
+
+                        iframe {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-way {}
+}

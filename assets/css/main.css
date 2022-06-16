@@ -1,0 +1,502 @@
+@font-face {
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/NotoSansKR-Black.eot");
+  src: url("../fonts/NotoSansKR-Black.woff2") format("woff2"), url("../fonts/NotoSansKR-Black.woff") format("woff");
+}
+@font-face {
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/NotoSansKR-Bold.eot");
+  src: url("../fonts/NotoSansKR-Bold.woff2") format("woff2"), url("../fonts/NotoSansKR-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/NotoSansKR-Medium.eot");
+  src: url("../fonts/NotoSansKR-Medium.woff2") format("woff2"), url("../fonts/NotoSansKR-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/NotoSansKR-Regular.eot");
+  src: url("../fonts/NotoSansKR-Regular.woff2") format("woff2"), url("../fonts/NotoSansKR-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/NotoSansKR-Light.eot");
+  src: url("../fonts/NotoSansKR-Light.woff2") format("woff2"), url("../fonts/NotoSansKR-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/NotoSansKR-Thin.eot");
+  src: url("../fonts/NotoSansKR-Thin.woff2") format("woff2"), url("../fonts/NotoSansKR-Thin.woff") format("woff");
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+}
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  z-index: 150;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header .gnb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 100px;
+  box-sizing: border-box;
+}
+.header .gnb ul {
+  display: flex;
+}
+.header .gnb ul li {
+  margin-left: 6.5rem;
+}
+.header .gnb ul li:first-child {
+  margin-left: 0;
+}
+.header .gnb ul li a {
+  position: relative;
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #fff;
+}
+.header .gnb ul li a:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: width 0.3s;
+}
+.header .gnb ul li a:hover:before {
+  width: 100%;
+}
+
+.section {
+  position: relative;
+}
+
+.footer {
+  padding: 3rem 0;
+  background-color: #242424;
+}
+.footer .logo {
+  padding: 2rem 0;
+  border-bottom: 1px solid #9f9f9f;
+}
+.footer .contents {
+  font-size: 1.6rem;
+  color: #9f9f9f;
+  margin: 3rem 0 5.4rem;
+}
+.footer .contents ul li {
+  display: inline-block;
+  margin-right: 2.4rem;
+}
+.footer .contents ul li:last-child {
+  margin-right: 0;
+}
+.footer .contents p {
+  margin-top: 1.6rem;
+}
+.footer .copy {
+  font-size: 1.4rem;
+  color: #9f9f9f;
+}
+
+.title {
+  font-size: 4.2rem;
+  font-weight: 700;
+}
+.title p {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 15rem;
+  height: 15rem;
+  background-color: #cc0000;
+}
+.label p {
+  font-size: 2.4rem;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 1.4rem;
+}
+
+.section-intro .swiper-slide img {
+  width: 100%;
+}
+.section-intro .swiper-button-prev {
+  color: #fff;
+}
+.section-intro .swiper-button-next {
+  color: #fff;
+}
+.section-intro .title {
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: fit-content;
+  transform: translate(-50%, -50%);
+}
+.section-intro .title h3 {
+  font-size: 6.4rem;
+  color: #fff;
+}
+.section-intro .title p {
+  text-align: right;
+  font-size: 2.4rem;
+  color: #fff;
+  margin-top: 1.2rem;
+}
+.section-intro .title p span {
+  font-weight: 500;
+}
+.section-philosophy .wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rem 0 12rem;
+}
+.section-philosophy .wrap .text h3 {
+  font-size: 2.8rem;
+  margin: 6.4rem 0 7.2rem;
+}
+.section-philosophy .wrap .text p {
+  font-size: 2.4rem;
+  color: #333333;
+}
+.section-philosophy .wrap .swiper {
+  width: 48rem;
+  margin-top: 6.4rem;
+  margin-left: 5rem;
+}
+.section-vision {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 320px;
+  background: url(../images/bg_vision.jpg);
+  background-size: cover;
+}
+.section-vision .wrap {
+  width: 128rem;
+  margin-right: 0;
+}
+.section-vision .wrap .title-wrapper {
+  display: inline-block;
+  color: #fff;
+  margin-left: 6rem;
+  padding: 9rem 8.4rem 9rem 16rem;
+  background-color: #cc0000;
+  box-sizing: border-box;
+}
+.section-vision .wrap .title-wrapper h3 {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  font-weight: 400;
+}
+.section-vision .wrap .title-wrapper h3 span {
+  font-weight: 700;
+  margin-right: 2rem;
+}
+.section-vision .wrap .title-wrapper h3:after {
+  content: "";
+  display: inline-block;
+  width: 45rem;
+  height: 1px;
+  margin-left: 2rem;
+  background-color: #fff;
+}
+.section-vision .wrap .title-wrapper h5 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 6rem 0 1.2rem;
+}
+.section-business {
+  background: url(../images/bg_business.jpg);
+  background-size: cover;
+}
+.section-business .title {
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10rem;
+  text-align: center;
+  color: #fff;
+}
+.section-business .card-wrapper > ul {
+  display: flex;
+}
+.section-business .card-wrapper > ul > li {
+  z-index: 5;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 25%;
+  height: 108rem;
+  text-align: center;
+  cursor: pointer;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+.section-business .card-wrapper > ul > li:last-child {
+  border-radius: 0;
+}
+.section-business .card-wrapper > ul > li .dim {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.section-business .card-wrapper > ul > li span {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.3);
+}
+.section-business .card-wrapper > ul > li h3 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 1rem;
+}
+.section-business .card-wrapper > ul > li p {
+  display: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #fff;
+  margin: 3rem 0;
+}
+.section-business .card-wrapper > ul > li ul {
+  display: none;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-weight: 500;
+  text-align: left;
+  color: #fff;
+  padding: 0 1rem;
+}
+.section-business .card-wrapper > ul > li:hover .dim {
+  opacity: 1;
+}
+.section-business .card-wrapper > ul > li:hover ul,
+.section-business .card-wrapper > ul > li:hover p {
+  display: block;
+}
+.section-video:before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 45rem;
+  background-color: #fafafa;
+}
+.section-video .wrap {
+  padding: 10rem 0 14rem;
+}
+.section-video .wrap .video-content {
+  width: 102rem;
+  margin: 14rem auto 0;
+}
+.section-video .wrap .video-content h3 {
+  font-size: 3.6rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+}
+.section-video .wrap .video-content .video-wrap {
+  display: flex;
+}
+.section-video .wrap .video-content .video-wrap .video {
+  width: 100%;
+  height: 48.5rem;
+}
+.section-video .wrap .video-content .video-wrap .video iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */

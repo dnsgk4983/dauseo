@@ -1,0 +1,125 @@
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    z-index: 150;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    .gnb {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 100px;
+        box-sizing: border-box;
+
+        ul {
+            display: flex;
+
+            li {
+                margin-left: 6.5rem;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                a {
+                    position: relative;
+                    font-size: 2.2rem;
+                    font-weight: 500;
+                    color: #fff;
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 0;
+                        height: 1px;
+                        background: #fff;
+                        transition: width .3s;
+                    }
+
+                    &:hover {
+                        &:before {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section {
+    position: relative;
+}
+
+.footer {
+    padding: 3rem 0;
+    background-color: #242424;
+
+    .logo {
+        padding: 2rem 0;
+        border-bottom: 1px solid #9f9f9f;
+    }
+
+    .contents {
+        font-size: 1.6rem;
+        color: #9f9f9f;
+        margin: 3rem 0 5.4rem;
+
+        ul {
+            li {
+                display: inline-block;
+                margin-right: 2.4rem;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        p {
+            margin-top: 1.6rem;
+        }
+    }
+
+    .copy {
+        font-size: 1.4rem;
+        color: #9f9f9f;
+    }
+}
+
+// 레이아웃관련
+.title {
+    font-size: 4.2rem;
+    font-weight: 700;
+
+    p {
+        font-size: 2.4rem;
+        font-weight: 500;
+        margin-top: 2rem;
+    }
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 15rem;
+    height: 15rem;
+    background-color: #cc0000;
+
+    p {
+        font-size: 2.4rem;
+        color: #fff;
+        font-weight: 500;
+        margin-bottom: 1.4rem;
+    }
+}
