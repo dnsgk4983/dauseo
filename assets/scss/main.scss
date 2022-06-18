@@ -1,7 +1,10 @@
 @import 'fonts';
 @import 'reset';
+@import 'variables';
 @import 'common';
 @import 'layout';
-@import 'faq';
+@import 'sections/portfolio';
+@import 'sections/faq';
+@import 'sections/way';
 
-
+@import 'responsive';

@@ -26,7 +26,11 @@
 
             h3 {
                 font-size: 6.4rem;
+                font-weight: 400;
                 color: #fff;
+                span {
+                    font-weight: 600;
+                }
             }
 
             p {
@@ -36,7 +40,7 @@
                 margin-top: 1.2rem;
 
                 span {
-                    font-weight: 500;
+                    font-weight: 600;
                 }
             }
         }
@@ -113,6 +117,30 @@
                     font-size: 3rem;
                     font-weight: 500;
                     margin: 6rem 0 1.2rem;
+                }
+            }
+            .text-wrapper {
+                position: relative;
+                .text {
+                    position: absolute;
+                    top: 16.8rem;
+                    left: 12.8rem;
+                    h3 {
+                        font-size: 3.6rem;
+                        font-weight: 600;
+                    }
+                    p {
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        margin-top: 2.4rem;
+                    }
+
+                    &.text-2 {
+                        left: 47.5rem;
+                    }
+                    &.text-3 {
+                        left: 82.4rem;
+                    }
                 }
             }
         }
@@ -229,9 +257,9 @@
 
         .wrap {
             padding: 10rem 0 14rem;
-
             .video-content {
-                width: 102rem;
+                max-width: 102rem;
+                width: 100%;
                 margin: 14rem auto 0;
 
                 h3 {

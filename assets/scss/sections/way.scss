@@ -1,0 +1,69 @@
+.section-way {
+  z-index: 5;
+  padding: 15rem 0 5rem;
+  background-color: #242424;
+  &:before {
+    content: "";
+    position: absolute;
+    top: -5rem;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: #fff;
+  }
+  .way-contents {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 156rem;
+    margin-left: auto;
+    .way-info {
+      color: $white;
+      .title {
+        span {
+          display: inline-block;
+          font-size: 2.4rem;
+          font-weight: 400;
+        }
+      }
+      p {
+        font-size: 2rem;
+        color: #d5d5d5;
+        line-height: 1.2;
+      }
+      .link {
+        margin-top: 12.8rem;
+        a {
+          display: inline-block;
+          font-size: 2rem;
+          font-weight: 600;
+          color: #a7a7a7;
+          margin-right: 3rem;
+          padding: 0.8rem 1.2rem 0.8rem 0.8rem;
+          border-bottom: 1px solid #a7a7a7;
+          .icon {
+            display: inline-block;
+            vertical-align: middle;
+          }
+          span {
+            display: inline-block;
+            vertical-align: middle;
+          }
+          &:last-child {
+
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    .way-map {
+      position: relative;
+      display: flex;
+      margin-top: -20rem;
+      #map {
+        max-width: 100rem;
+        width: 100rem;
+        height: 50rem;
+      }
+    }
+  }
+}

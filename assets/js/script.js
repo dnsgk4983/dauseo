@@ -8,7 +8,7 @@ $(function () {
             scrollTop: $(href).offset().top
         }, 500, function () {
             window.location.hash = href;
-        })
+        });
     });
 
     function slider() {
@@ -28,6 +28,24 @@ $(function () {
             loop: true
         })
     }
+});
+
+// 스크롤 시 헤더 고정
+document.addEventListener('scroll', scrollEvent);
+let header = document.querySelector(".header");
+let headerHeight = header.offsetHeight;
+function scrollEvent() {
+
+    if (window.scrollY > headerHeight) {
+        header.classList.add("fixed");
+    } else {
+        header.classList.remove("fixed");
+    }
+}
+
+let menuController = document.querySelector(".btn-menu");
+menuController.addEventListener("click", () => {
+    header.classList.toggle("open");
 });
 
 // faq

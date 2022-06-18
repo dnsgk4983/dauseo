@@ -7,15 +7,9 @@ $blue: #03b5d2;
 
 .section-faq{
     background: #f5f5f5;
-    padding: 140px 0;
-    .faq__content{
-        width: 1200px;
-        margin: 0 auto;
-    }
-    .faq-title{
-        font-weight: bold;
-        margin-bottom:78px;
-        font-size:5rem;
+    padding: 14rem 0 22rem;
+    .title{
+        margin-bottom:7.8rem;
     }
     h3{
         font-size: 2.4rem;
@@ -35,7 +29,7 @@ $blue: #03b5d2;
     
 }
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 1rem;
   }
 
 ::-webkit-scrollbar-track {
@@ -56,19 +50,21 @@ $blue: #03b5d2;
 
   .accordion {
     .accordion-item {
-        background:#fff;
-        margin-bottom:30px;
-
+      padding-bottom: 1.2rem;
+      margin-bottom:3rem;
+      background-color:#fff;
+    }
+    em {
+      font-size: 3.2rem;
+      font-weight: 700;
+      margin-right: 3.6rem;
     }
     button {
       position: relative;
-      display: block;
+      display: flex;
       text-align: left;
       width: 100%;
-      padding: 1em 0;
-      color: $text;
-      font-size: 1.15rem;
-      font-weight: 400;
+      padding:  2.4rem 8rem 1.2rem 5rem;
       border: none;
       background: none;
       outline: none;
@@ -81,47 +77,47 @@ $blue: #03b5d2;
           border: 1px solid $blue;
         }
       }
-      .accordion-title {
+      
+      p {
+        color: $default;
         font-size: 2.4rem;
-        padding: 1em 1.5em 1em 0;
+        font-weight: 600;
       }
       .icon {
         display: inline-block;
         position: absolute;
-        top: 18px;
-        right: 0;
-        width: 22px;
-        height: 22px;
-        border: 1px solid;
-        border-radius: 22px;
+        top: 2.4rem;
+        right: 5rem;
+        width: 3.2rem;
+        height: 3.2rem;
+        transition: all .3s;
         &::before {
           display: block;
           position: absolute;
           content: '';
-          top: 9px;
-          left: 5px;
-          width: 10px;
-          height: 2px;
-          background: currentColor;
+          top: 1.5rem;
+          left: 0.8rem;
+          width: 1.7rem;
+          height: 0.2rem;
+          background: $default;
         }
         &::after {
           display: block;
           position: absolute;
           content: '';
-          top: 5px;
-          left: 9px;
-          width: 2px;
-          height: 10px;
-          background: currentColor;
+          width: 0.2rem;
+          height: 1.7rem;
+          top: 0.8rem;
+          left: 1.6rem;
+          background: $default;
         }
       }
     }
     button[aria-expanded='true'] {
 
       .icon {
-        &::after {
-          width: 0;
-        }
+        transform: rotate(45deg);
+        transition: all .3s;
       }
       + .accordion-content {
         opacity: 1;
@@ -131,15 +127,18 @@ $blue: #03b5d2;
       }
     }
     .accordion-content {
+      display: flex;
       opacity: 0;
       max-height: 0;
+      padding: 0 8rem 0 5rem;
       overflow: hidden;
       transition: opacity 200ms linear, max-height 200ms linear;
       will-change: opacity, max-height;
+      box-sizing: border-box;
       p {
         font-size: 2.4rem;
-        font-weight: 300;
-        margin: 2em 0;
+        line-height: 3.6rem;
+        font-weight: 600;
       }
     }
   }

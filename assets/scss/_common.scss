@@ -1,3 +1,9 @@
+.contents {
+    position: relative;
+}
+.mobView {
+    display: none;
+}
 .wrap {
     width: 1200px;
     margin: 0 auto;
@@ -9,6 +15,10 @@
     top: 0;
     left: 0;
     width: 100%;
+    &.fixed {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
 
     .gnb {
         display: flex;
@@ -50,6 +60,20 @@
                         }
                     }
                 }
+            }
+        }
+    }
+
+    .btn-menu {
+        display: none;
+        span {
+            display: block;
+            width: 4.8rem;
+            height: 0.2rem;
+            margin-bottom: 1.6rem;
+            background-color: #fff;
+            &:last-child {
+                margin-bottom: 0;
             }
         }
     }
@@ -108,16 +132,17 @@
 }
 
 .label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 15rem;
-    height: 15rem;
-    background-color: #cc0000;
-
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 15rem;
+        height: 15rem;
+        background-color: #cc0000;
+    }
     p {
-        font-size: 2.4rem;
+        font-size: 2rem;
         color: #fff;
         font-weight: 500;
         margin-bottom: 1.4rem;
